@@ -1,2 +1,6 @@
+# Eclipse
+.settings
+.project
+.classpath
 /target
 /work
