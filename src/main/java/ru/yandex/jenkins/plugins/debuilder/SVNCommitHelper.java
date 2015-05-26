@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.Serializable;
 import java.text.MessageFormat;
 
+import org.jenkinsci.remoting.RoleChecker;
 import org.tmatesoft.svn.core.SVNCommitInfo;
 import org.tmatesoft.svn.core.SVNDepth;
 import org.tmatesoft.svn.core.SVNException;
@@ -49,4 +50,9 @@ public class SVNCommitHelper implements Serializable , Callable<String, Debianiz
 			clientManager.dispose();
 		}
 	}
+
+    @Override
+    public void checkRoles(RoleChecker arg0) throws SecurityException {
+        // TODO Auto-generated method stub
+    }
 }
